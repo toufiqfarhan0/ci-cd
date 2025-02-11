@@ -14,13 +14,13 @@ export default function Home() {
         />
         <ol className="list-inside capitalize list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
           <li className="mb-2">
-            this is farhan testing the CD
+            this is farhan
             <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
               app/page.tsxferwtewrtewrtewr
             </code>
             .
           </li>
-          <li>My mind is not working</li>
+          <li>My mind is not working! this is a pr testing</li>
         </ol>
 
         <div className="flex gap-4 items-center flex-col sm:flex-row">
