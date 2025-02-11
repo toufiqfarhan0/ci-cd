@@ -5,7 +5,7 @@ env:
   VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
 
 on:
-  pull_request:
+  push:
     branches-ignore:
       - main
 
@@ -26,14 +26,3 @@ jobs:
 
       - name: Deploy Project
         run: vercel deploy --prebuilt --token=${{secrets.VERCEL_TOKEN}}
-
-      - name: Get Deployment URL
-        id: deployment
-        run: echo "DEPLOYMENT_URL=$(vercel --token ${{ secrets.VERCEL_TOKEN }} --org ${{ secrets.VERCEL_ORG_ID }} --project ${{ secrets.VERCEL_PROJECT_ID }} --yes --scope my-team --env ENV_VAR_NAME=value | tail -1)" >> $GITHUB_ENV
-
-      - name: Comment on PR
-        uses: thollander/actions-comment-pull-request@v2
-        with:
-          message: "🚀 Preview your changes: ${{ env.DEPLOYMENT_URL }}"
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
