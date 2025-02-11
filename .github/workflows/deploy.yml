@@ -27,7 +27,7 @@ jobs:
       - name: Deploy Project
         run: vercel deploy --prebuilt --token=${{secrets.VERCEL_TOKEN}}
 
-        - name: Get Deployment URL
+      - name: Get Deployment URL
         id: deployment
         run: echo "DEPLOYMENT_URL=$(vercel --token ${{ secrets.VERCEL_TOKEN }} --org ${{ secrets.VERCEL_ORG_ID }} --project ${{ secrets.VERCEL_PROJECT_ID }} --yes --scope my-team --env ENV_VAR_NAME=value | tail -1)" >> $GITHUB_ENV
 
