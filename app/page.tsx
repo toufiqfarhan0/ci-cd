@@ -12,7 +12,7 @@ export default function Home() {
           height={38}
           priority
         />
-        <ol className="list-inside capitalize list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
+        <ol className="list-inside text-7xl capitalize list-decimal text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
           <li className="mb-2">
             this is farhan
             <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
@@ -20,7 +20,7 @@ export default function Home() {
             </code>
             .
           </li>
-          <li>My mind is not working! this is a pr testing</li>
+          <li className="text-5xl">My mind is not working! this is a pr testing</li>
         </ol>
 
         <div className="flex gap-4 items-center flex-col sm:flex-row">
