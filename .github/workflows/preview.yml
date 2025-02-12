@@ -6,8 +6,12 @@ env:
 
 on:
   pull_request:
-    branches-ignore:
+    branches:
       - main
+      
+permissions: 
+  pull-requests: write
+  contents: read
 
 jobs:
   Deploy-Preview:
