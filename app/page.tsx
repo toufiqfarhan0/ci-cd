@@ -12,15 +12,15 @@ export default function Home() {
           height={38}
           priority
         />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
+        <ol className="list-inside capitalize list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
           <li className="mb-2">
-            Get started by editing{" "} farhan fiojeotiweripuuhew 
+            this is farhan
             <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
               app/page.tsxferwtewrtewrtewr
             </code>
             .
           </li>
-          <li>Save and see your changes instantly.</li>
+          <li>My mind is not working! this is a pr testing</li>
         </ol>
 
         <div className="flex gap-4 items-center flex-col sm:flex-row">
@@ -45,7 +45,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Read our docs
+            Read our docs so here I have added the workflows
           </a>
         </div>
       </main>
